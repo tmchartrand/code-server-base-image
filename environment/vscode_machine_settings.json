@@ -1,0 +1,15 @@
+{
+    "jupyter.notebookFileRoot": "/code",
+    "git.useIntegratedAskPass": false,
+    "github.gitAuthentication": false,
+    "basedpyright.analysis.inlayHints.variableTypes": false,
+    "basedpyright.analysis.inlayHints.functionReturnTypes": false,
+    "basedpyright.analysis.inlayHints.callArgumentNames": false,
+    "basedpyright.analysis.exclude": [
+        "results/**",
+        "data/**",
+        "scratch/**"
+    ],
+    "basedpyright.analysis.typeCheckingMode": "off",
+    "python.languageServer": "None"
+}
