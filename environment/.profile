@@ -8,3 +8,4 @@ fi
 
 mesg n 2> /dev/null || true
 ln -s /root/vscode_machine_settings.json /root/capsule/code/.vscode/Machine/settings.json
+bash /root/setup_cline_mcp.sh
