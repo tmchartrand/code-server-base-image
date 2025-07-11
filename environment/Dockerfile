@@ -8,15 +8,16 @@ ARG GIT_ASKPASS
 ARG GIT_ACCESS_TOKEN
 COPY git-askpass /
 
-RUN pip install -U --no-cache-dir \
-    uv==0.7.15
-RUN uv tool install aind-metadata-mcp
+RUN pip install -U --no-cache-dir uv==0.7.15
 
 COPY postInstall /
 RUN /postInstall
 
-COPY .profile /root/
-COPY setup_cline_mcp.sh /root/
-COPY vscode_machine_settings.json /root/
+RUN uv tool install --no-cache aind-metadata-mcp==0.3.4
+ENV PATH="/root/.local/bin:$PATH"
 
-ENV PYTHONPATH=/code
+COPY setup.sh /root/
+COPY vscode_machine_settings.json /root/
+RUN echo "bash /root/setup.sh" >> /root/.profile
+
+ENV PYTHONPATH="/code"
