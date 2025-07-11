@@ -16,8 +16,7 @@ COPY postInstall /
 RUN /postInstall
 
 COPY .profile /root/
-COPY setup_cline_msp.sh /root/
-COPY cline_mcp_settings.json /root/
+COPY setup_cline_mcp.sh /root/
 COPY vscode_machine_settings.json /root/
 
 ENV PYTHONPATH=/code
