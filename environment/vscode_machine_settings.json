@@ -1,4 +1,5 @@
 {
+    "github.copilot.nextEditSuggestions.enabled": true,
     "jupyter.notebookFileRoot": "/code",
     "git.useIntegratedAskPass": false,
     "github.gitAuthentication": false,
@@ -11,5 +12,13 @@
         "scratch/**"
     ],
     "basedpyright.analysis.typeCheckingMode": "off",
-    "python.languageServer": "None"
+    "python.languageServer": "None",
+    "mcp": {
+        "inputs": [],
+        "servers": {
+            "aind-metadata-mcp": {
+                "command": "aind-metadata-mcp"
+            }
+        }
+    }
 }
