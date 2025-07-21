@@ -13,7 +13,7 @@ RUN pip install -U --no-cache-dir uv==0.7.15
 COPY postInstall /
 RUN /postInstall
 
-RUN uv tool install --no-cache aind-metadata-mcp==0.3.4
+RUN uv tool install --no-cache aind-metadata-mcp==0.4.1
 ENV PATH="/root/.local/bin:$PATH"
 
 COPY setup.sh /root/
