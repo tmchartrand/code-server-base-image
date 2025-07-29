@@ -1,5 +1,5 @@
 metadata_version: 1
-name: code-server base image
+name: code-server/copilot base image
 description: Capsule for building a base image with the most up-to-date versions of
   code-server and python development extensions, with critical settings preset as
   "machine settings" and aind-metadata-mcp preinstalled.
