@@ -1,0 +1,7 @@
+{
+    "servers": {
+        "aind-metadata-mcp": {
+            "command": "aind-metadata-mcp"
+        }
+    }
+}

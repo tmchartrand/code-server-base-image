@@ -1,4 +1,6 @@
 {
+    // Do not edit, settings provided by base image
+    // override at the user or workspace level instead
     "github.copilot.nextEditSuggestions.enabled": true,
     "jupyter.notebookFileRoot": "/code",
     "git.useIntegratedAskPass": false,
@@ -12,13 +14,5 @@
         "scratch/**"
     ],
     "basedpyright.analysis.typeCheckingMode": "off",
-    "python.languageServer": "None",
-    "mcp": {
-        "inputs": [],
-        "servers": {
-            "aind-metadata-mcp": {
-                "command": "aind-metadata-mcp"
-            }
-        }
-    }
+    "python.languageServer": "None"
 }
