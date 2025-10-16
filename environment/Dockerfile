@@ -11,11 +11,9 @@ COPY install_vscode /
 RUN /install_vscode
 
 RUN pip install -U --no-cache-dir uv==0.9.3
-RUN uv tool install --no-cache aind-metadata-mcp==0.5.2
+#RUN uv tool install --no-cache aind-metadata-mcp==0.5.2
 
-COPY setup.sh /root/
-COPY vscode_machine_settings.json /root/
-COPY mcp.json /root/
+RUN --mount=type=bind,source=files,target=/files cp /files/* /root/
 RUN echo "bash /root/setup.sh" >> /root/.profile
 
 ENV PYTHONPATH="/code"
