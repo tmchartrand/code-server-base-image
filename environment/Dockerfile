@@ -8,13 +8,13 @@ ARG GIT_ASKPASS
 ARG GIT_ACCESS_TOKEN
 COPY git-askpass /
 
-RUN pip install -U --no-cache-dir uv==0.7.15
+RUN pip install -U --no-cache-dir uv==0.9.3
 
 COPY install_vscode /
 RUN /install_vscode
 
 
-RUN uv tool install --no-cache aind-metadata-mcp==0.5.1
+RUN uv tool install --no-cache aind-metadata-mcp==0.5.2
 
 ENV PATH="/root/.local/bin:$PATH"
 
