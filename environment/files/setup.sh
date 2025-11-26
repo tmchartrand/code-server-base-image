@@ -24,6 +24,7 @@ fi
 
 DIRECTORY=/root/.dotfiles
 # install dotfiles via git if $DOTFILES_REPO is set
+# TODO: move this into chezmoi scripts in dotfiles instead?
 if test -n "$DOTFILES_REPO"; then
   if [ -d "$DIRECTORY" ]; then
     echo "updating dotfiles"
