@@ -32,4 +32,4 @@ download_and_install_extension() {
         --output $file
     code-server --extensions-dir=/.vscode/extensions --install-extension $file
 }
-download_and_install_extension github copilot-chat 0.35.3
+download_and_install_extension github copilot-chat 0.36.2
