@@ -3,6 +3,7 @@
 # link in vscode settings
 rm /root/capsule/code/.vscode/Machine/settings.json
 ln -s /root/vscode_machine_settings.json /root/capsule/code/.vscode/Machine/settings.json
+
 VSCODE_DIR=/root/capsule/code/.vscode/User/
 VSCODE_CONFIG="$VSCODE_DIR/mcp.json"
 if [ ! -f "$VSCODE_CONFIG" ]; then
@@ -15,7 +16,7 @@ CLINE_CONFIG="$CLINE_DIR/cline_mcp_settings.json"
 
 if [ ! -f "$CLINE_CONFIG" ]; then
   mkdir -p $CLINE_DIR
-  cp /root/mcp.json "$CLINE_CONFIG"
+  cp /root/cline_mcp_settings.json "$CLINE_CONFIG"
 fi
 
 DIRECTORY=/root/.dotfiles
