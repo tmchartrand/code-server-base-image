@@ -10,7 +10,7 @@ COPY git-askpass /
 COPY install_vscode /
 RUN /install_vscode
 
-RUN pip install -U --no-cache-dir uv==0.9.3
+RUN pip install -U --no-cache-dir uv==0.10.7
 RUN uv tool install --no-cache aind-metadata-mcp==0.5.2
 
 COPY ./files/ /root/
