@@ -9,6 +9,8 @@ COPY git-ask-pass /
 
 COPY install_vscode /
 RUN /install_vscode
+RUN pip install -U --no-cache-dir uv==0.11.1
+RUN uv tool install codeocean-mcp-server
 
 COPY ./files/ /root/
 RUN echo "bash /root/setup.sh" >> /root/.profile
