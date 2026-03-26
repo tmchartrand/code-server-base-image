@@ -1,1 +1,1 @@
-ls /opt
+ls -a /files
