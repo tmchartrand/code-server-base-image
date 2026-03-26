@@ -2,14 +2,14 @@
 
 # link in vscode settings
 rm /root/capsule/code/.vscode/Machine/settings.json
-ln -s /files/vscode_machine_settings.json /root/capsule/code/.vscode/Machine/settings.json
+ln -s /usr/vscode_machine_settings.json /root/capsule/code/.vscode/Machine/settings.json
 
 # add mcp settings to vscode if not already present
 VSCODE_DIR=/root/capsule/code/.vscode/User/
 VSCODE_CONFIG="$VSCODE_DIR/mcp.json"
 if [ ! -f "$VSCODE_CONFIG" ]; then
   mkdir -p $VSCODE_DIR
-  cp /files/mcp.json "$VSCODE_CONFIG"
+  cp /usr/mcp.json "$VSCODE_CONFIG"
 fi
 
 DIRECTORY=/root/.dotfiles
