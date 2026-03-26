@@ -12,8 +12,8 @@ RUN /install_vscode
 RUN pip install -U --no-cache-dir uv==0.11.1
 RUN uv tool install codeocean-mcp-server
 
-COPY ./files/ /usr/
-RUN echo "bash /usr/setup.sh" >> /root/.profile
+COPY ./files/ /.files/
+RUN echo "bash /.files/setup.sh" >> /root/.profile
 
 ENV PYTHONPATH="/code"
 ENV PATH="/root/.local/bin:$PATH"
