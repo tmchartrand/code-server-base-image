@@ -18,3 +18,4 @@ RUN echo "bash /.files/setup.sh" >> /root/.profile
 ENV PYTHONPATH="/code"
 ENV PATH="/root/.local/bin:$PATH"
 ENV UV_NO_CACHE=1
+ENV IS_SANDBOX=1

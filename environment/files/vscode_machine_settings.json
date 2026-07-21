@@ -22,6 +22,10 @@
         "results/**",
         "data/**",
         "scratch/**"
-    ],
+    ],    
+    "python.analysis.inlayHints": {
+        "functionReturnTypes": false,
+        "variableTypes": false
+    },
     "python.languageServer": "None"
 }
