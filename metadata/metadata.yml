@@ -2,6 +2,5 @@ metadata_version: 1
 name: code-server/copilot base image with dotfiles
 description: |-
   Includes python, uv, and code-server with recommended settings, python development extensions, copilot, and codeocean-mcp-server.
-  Configure user-specific settings by specifying DOTFILES_REPO as an environment variable or user secret, and the repo will be installed on capsule launch.
 authors:
 - name: Tom Chartrand
