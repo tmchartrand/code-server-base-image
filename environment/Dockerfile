@@ -7,15 +7,20 @@ ARG GIT_ASKPASS
 ARG GIT_ACCESS_TOKEN
 COPY git-ask-pass /
 
+ENV PATH="/root/.local/bin:$PATH"
+ENV UV_NO_CACHE=1
+
+RUN curl -fsSL https://claude.ai/install.sh | bash
+
 COPY install_vscode /
 RUN /install_vscode
-RUN pip install -U --no-cache-dir uv==0.11.1 ipykernel==7.2.0
+RUN pip install -U --no-cache-dir uv==0.12.5 jupyterlab==4.6.3 boto3 aws-bedrock-token-generator
+
 RUN uv tool install codeocean-mcp-server
 
 RUN --mount=type=bind,source=./files,target=./files cp -r ./files /.files
 RUN echo "bash /.files/setup.sh" >> /root/.profile
 
-ENV PYTHONPATH="/code"
-ENV PATH="/root/.local/bin:$PATH"
-ENV UV_NO_CACHE=1
 ENV IS_SANDBOX=1
+ENV CLAUDE_CODE_USE_BEDROCK=1
+ENV CLAUDE_CODE_USE_MANTLE=1

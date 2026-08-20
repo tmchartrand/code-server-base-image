@@ -1,6 +1,6 @@
 metadata_version: 1
-name: code-server/copilot base image with dotfiles
-description: |-
-  Includes python, uv, and code-server with recommended settings, python development extensions, copilot, and codeocean-mcp-server.
+name: swdb base image
+description: Includes python, uv, and code-server with recommended settings, python
+  development extensions, copilot, and codeocean-mcp-server.
 authors:
 - name: Tom Chartrand
