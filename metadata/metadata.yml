@@ -1,6 +1,7 @@
 metadata_version: 1
 name: swdb base image
-description: Includes python, uv, and code-server with recommended settings, python
-  development extensions, copilot, and codeocean-mcp-server.
+description: Environment for SWDB course usage. Includes python, jupyterlab, and code-server
+  (VS Code). Code-server is configured with recommended settings, python development
+  extensions, copilot, claude, and codeocean-mcp-server.
 authors:
 - name: Tom Chartrand

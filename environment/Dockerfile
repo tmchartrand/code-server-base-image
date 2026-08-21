@@ -20,7 +20,3 @@ RUN uv tool install codeocean-mcp-server
 
 RUN --mount=type=bind,source=./files,target=./files cp -r ./files /.files
 RUN echo "bash /.files/setup.sh" >> /root/.profile
-
-ENV IS_SANDBOX=1
-ENV CLAUDE_CODE_USE_BEDROCK=1
-ENV CLAUDE_CODE_USE_MANTLE=1
