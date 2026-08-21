@@ -17,6 +17,6 @@ code-server --extensions-dir=/.vscode/extensions --install-extension ms-python.p
 code-server --extensions-dir=/.vscode/extensions --install-extension meta.pyrefly
 code-server --extensions-dir=/.vscode/extensions --install-extension anthropic.claude-code
 
-VERSION=v0.2.2
+VERSION=v0.4.0
 curl -L -o /tmp/bedrock-auth-$VERSION.vsix https://github.com/allenneuraldynamics/bedrock-auth/releases/download/$VERSION/bedrock-auth-$VERSION.vsix
 code-server --extensions-dir=/.vscode/extensions --install-extension /tmp/bedrock-auth-$VERSION.vsix
