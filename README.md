@@ -14,6 +14,8 @@ Note: if working on a shared capsule, adding the secret will update the `secrets
 
 ![](resources/credentials.jpg)
 
+![](resources/copilot_models.jpg)
+
 **For Claude Code**: In the capsule *environment* pane, add two environment variables, `CLAUDE_CODE_USE_BEDROCK=1` and `CLAUDE_CODE_USE_MANTLE=1`. Claude code should work seamlessly after this, either in the editor extension or the integrated terminal.
 
 ![](resources/env_var.jpg)
