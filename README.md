@@ -8,7 +8,7 @@ If you need access, we will provide it for you! The SWDB environment is also set
 
 **For Copilot**: In the *Capsule Settings* menu (gear in the upper right), add an *AWS Cloud Credentials* secret if not already present, and select `AWS Assumable Role - aind-codeocean-user`.
 
-When you launch the capsule after this (you can edit secrets with the workstation paused, doesn't need to be shutdown), you may be get a prompt from the *bedrock-auth* extension to reload the window; following that, you should have a list of models available for Copilot, no login needed.
+When you launch the capsule after this (you can edit secrets with the workstation paused, doesn't need to be shutdown), you may be get a prompt from the *bedrock-auth* extension to reload the window; following that, you should have a list of models available for Copilot, no login needed. (If you don't see models listed, try another reload or select the "Manage models..." option and they should appear.)
 
 Note: if working on a shared capsule, adding the secret will update the `secrets.json` - it's fine to commit this to the shared github. Collaborators may see a prompt suggesting they attach a secret in that slot, but it's fine to ignore and run without it.
 
