@@ -2,7 +2,7 @@
     // Do not edit, settings provided by base image
     // override at the user or workspace level instead
     "chat.useAgentSkills": true,
-    "chat.useNestedAgentsMdFiles": true,
+    "chat.useNestedAgentsMdFiles": false,
     "chat.useClaudeHooks": true,
     "chat.byokUtilityModelDefault": "mainAgent",
     "inlineChat.notebookAgent": true,
@@ -20,5 +20,11 @@
         "functionReturnTypes": false,
         "variableTypes": false
     },
-    "python.languageServer": "None"
+    "python.languageServer": "None",
+    "files.watcherExclude": {
+        "**/data/**": true
+    },
+    "search.exclude": {
+        "**/data/**": true
+    }
 }
